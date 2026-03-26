@@ -5,6 +5,11 @@
 plugins {
     `java-library`
     `maven-publish`
+    application // <-- Removed the backticks here
+}
+
+application {
+    mainClass.set("org.example.App")
 }
 
 repositories {
